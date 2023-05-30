@@ -117,7 +117,9 @@ h2 {
     flex-direction: column;
 }
 
-
+.about{
+   flex-wrap: wrap;
+}
 
 .social-info {
     margin-top: 20px;
