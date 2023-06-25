@@ -15,7 +15,7 @@
     font-family: 'Poppins', sans-serif;
     color: var(--primary-color);
     text-decoration: none;
-    
+
 }
 
 a:hover{
@@ -143,7 +143,7 @@ h2 {
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  
+
   .item {
     flex-basis: calc(33.33% - 20px);
     margin: 5px;
@@ -169,12 +169,12 @@ h2 {
     .sectionskills{
         display: flex;
         flex-direction: column;
-        
+
     }
 
     .about{
       text-align: justify;
       margin: 20px;
     }
-    
+
 }
