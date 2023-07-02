@@ -79,6 +79,22 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
+.sectionprojetos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .item {
+    flex-basis: calc(33.33% - 20px);
+    margin: 5px;
+  }
+
+@media (max-width: 768px) {
+
+}
 </style>

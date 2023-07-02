@@ -29,6 +29,23 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.sectionskills{
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    padding: 10px;
+    margin-inline: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
+@media screen and (max-width: 768px) {
+    .sectionskills{
+        display: flex;
+        flex-direction: column;
+
+    }
+}
 </style>

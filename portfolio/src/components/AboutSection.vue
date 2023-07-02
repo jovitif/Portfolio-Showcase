@@ -31,6 +31,35 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
+.sectionsobre{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.about{
+    flex-wrap: wrap;
+ }
+ 
+ .social-info {
+     margin-top: 20px;
+ }
+
+ @media screen and (max-width: 768px) {
+    .sectionsobre{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about{
+        text-align: justify;
+        margin: 20px;
+      }
+ }
+ 
 </style>
