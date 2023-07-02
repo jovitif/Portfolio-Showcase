@@ -1,169 +1,45 @@
 <template>
   <div>
-    <header>
-      <a class="logo" href="index.html">
-          <img src="./assets/programming-code-signs.png" alt="coding">
-          <h1>Jovitif</h1>
-      </a>
-      <nav class="menu">
-          <ul>
-              <li><a class="smooth-scroll" href="#Home">Home</a></li>
-              <li><a class="smooth-scroll" href="#About">About</a></li>
-              <li><a class="smooth-scroll" href="#Skills">Skills</a></li>
-              <li><a class="smooth-scroll" href="#Projects">Projects</a></li>
-          </ul>
-      </nav>
     
-  </header>
+  <HeaderComponent></HeaderComponent>
   
 
   <main>
-     
-
-
-
-      <section class="sectionsobre" id="About">
-          <section class="profile">
-              <div class="card">
-                  <a href="https://github.com/jovitif" target="_blank"><img src="./assets/profile.png" alt="Foto de perfil"></a>
-                  <div class="card-info">
-                      <a href="https://github.com/jovitif" target="_blank"><span>@Jovitif</span></a>
-                      <a href="mailto:joaosales911@gmail.com">joaosales911@gmail.com</a>
-                      <p>Computer Science Student</p>
-                      <address>Mossoró, Brazil</address>
-                  </div>
-              </div>
-          </section>
-          <section class="about">
-              <h3>About Me</h3>
-
-<p>Hi, my name is <span>João Vitor</span> and I'm a computer science undergraduate student at
-  <abbr title="Universidade Federal do Semi-Árido"><a href="https://pt.wikipedia.org/wiki/Universidade_Federal_Rural_do_Semi-%C3%81rido" target="_blank">UFERSA</a></abbr>. Currently in my 5th semester, I am dedicated to becoming a skilled full-cycle developer, equipped with knowledge in essential technologies sought after in the job market. My experience lies in web development and Java desktop application development.</p>
-              <div class="social-info">
-                  <p>Other Social Media:</p>
-                  <p>Instagram: <a href="https://instagram.com/https://www.instagram.com/j2aov/" target="_blank"><span>@j2aov</span></a></p>
-                  <p>Linkedin: <a href="https://www.linkedin.com/in/jo%C3%A3o-sales-058747211/" target="_blank"><span>João Sales</span></a></p>
-              </div>
-          </section>
-      </section>
-
+      
+ <AboutSection></AboutSection>
       <hr>
 
       <div class="central-header">
           <h2>My Skills:</h2>
       </div>
 
-      <section class="sectionskills" id="Skills">
-          <section>
-              <h2>Programming</h2>
-              <ul>
-                  <li>Structured programming in C++</li>
-                  <li>Object-Oriented Programming and Data Structures in Java</li>
-                  <li>Front-end: HTML, CSS, JavaScript and React</li>
-                  <li>Back-end: Spring and MySQL</li>
-                  <li>Others: Markdown, Python, Netlify, Insomnia, Figma and Notion</li>
-              </ul>
-          </section>
-          <section>
-              <h2>Other Skills</h2>
-              <ul>
-                  <li>Intermediate level of English</li>
-                  <li>Basic level of Spanish</li>
-                  <li>Active learning</li>
-                  <li>Communication</li>
-              </ul>
-          </section>
-      </section>
-
+      <SKillsSection></SKillsSection>
       <hr>
+
 
       <div class="central-header">
           <h2>My Projects:</h2>
       </div>
 
-      <section class="sectionprojetos" id="Projects">
-          <section class="item">
-              <section class="projeto">
-                  <div class="card">
-                      <img src="./assets/MusicConnect.png" alt="Music Image">
-                      <div class="card-info">
-                          <p><span>MusiConnect</span></p>
-                          <p>Project developed independently</p>
-                          <p>Technologies: Spring & Vue</p>
-                          <a href="https://github.com/jovitif/MusiConnect" target="_blank">Project on GitHub</a>
-                          <a href="https://musicconnect.netlify.app/" target="_blank">Preview</a>
-                      </div>
-                  </div>
-              </section>
-          </section>
-          <section class="item">
-              <section class="projeto">
-                  <div class="card">
-                      <img src="./assets/test.png" alt="Test Image">
-                      <div class="card-info">
-                          <p><span>Test Generator</span></p>
-                          <p>Project developed for the object-oriented programming course</p>
-                          <p>Technologies: Java, MVC, MySQL, JavaFX</p>
-                          <a href="https://github.com/jovitif/Test-Generator-System" target="_blank">Project on
-                              GitHub</a>
-                      </div>
-                  </div>
-              </section>
-          </section>
-          <section class="item">
-              <section class="projeto">
-                  <div class="card">
-                      <img src="./assets/food.png" alt="Food Image">
-                      <div class="card-info">
-                          <p><span>FaceFood</span></p>
-                          <p>Project developed for the web programming course</p>
-                          <p>Technologies: HTML, CSS, JavaScript, React, Tailwind, Spring</p>
-                          <a href="https://github.com/lryanborges/FaceFood" target="_blank">Project on GitHub</a>
-                      </div>
-                  </div>
-              </section>
-          </section>
-          <section class="item">
-              <section class="projeto">
-                  <div class="card">
-                      <img src="./assets/Ascension.png" alt="Cards Image">
-                      <div class="card-info">
-                          <p><span>Ascension</span></p>
-                          <p>Project developed for the Data Structures I course</p>
-                          <p>Technologies: Java</p>
-                          <a href="https://github.com/BrennoKM/Ascencion" target="_blank">Project on GitHub</a>
-                      </div>
-                  </div>
-              </section>
-          </section>
-          <section class="item">
-              <section class="projeto">
-                  <div class="card">
-                      <img src="../src/assets/Finfac.png" alt="Money Image">
-                      <div class="card-info">
-                          <p><span>FinFac</span></p>
-                          <p>Project developed for the Object-Oriented Analysis and Design course</p>
-                          <p>Technologies: Java, Netbeans, MySQL, Java Swing</p>
-                          <a href="https://github.com/jovitif/FinFac-FinancasFaceis" target="_blank">Project on
-                              GitHub</a>
-                      </div>
-                  </div>
-              </section>
-          </section>
-
-      </section>
-
+      <ProjectsSection></ProjectsSection>
 
   </main>
   </div>
 </template>
 
 <script>
-//import HeaderComponent from './components/HeaderComponent.vue'
+import HeaderComponent from './components/HeaderComponent.vue';
+import AboutSection from './components/AboutSection.vue';
+import SKillsSection from './components/SkillsSection.vue';
+import ProjectsSection from './components/ProjectsSection.vue';
+
 export default {
   name: 'App',
   components: {
-    //HeaderComponent
+    HeaderComponent,
+    AboutSection,
+    SKillsSection,
+    ProjectsSection,
   }
 }
 </script>
