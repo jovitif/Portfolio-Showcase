@@ -6,10 +6,13 @@
   
     <main>
         
-   <AboutSection></AboutSection>
+        <div class="section-wrapper">
+            <AboutSection></AboutSection>
+          </div>
+    
         <hr>
   
-        <div class="central-header">
+        <div class="central-header" id="Skills">
             <h2>My Skills:</h2>
         </div>
   
@@ -98,6 +101,10 @@
       font-weight: 600;
       line-height: 1.5;
   }
+
+  .section-wrapper {
+    margin-top: 100px; /* Ajuste a quantidade de espaço conforme necessário */
+  }
   
   .main {
       display: flex;
@@ -128,7 +135,14 @@
   .central-header {
       text-align: center;
       padding: 20px;
-  }
+}
+
+@media screen and (max-width: 768px) {
+    .section-wrapper {
+        margin-top: 150px; /* Ajuste a quantidade de espaço conforme necessário */
+      }
+      
+}
   
   </style>
   

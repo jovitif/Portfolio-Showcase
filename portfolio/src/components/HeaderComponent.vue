@@ -126,7 +126,7 @@
     .menu-toggle span {
       width: 100%;
       height: 3px;
-      background-color: white;
+      background-color: var(--primary-color);
       display: block;
       transition: all 0.3s ease;
     }
