@@ -1,16 +1,15 @@
 <template>
     <section class="sectionskills">
-        <section>
+        <section class="sectionskill">
             <h2>Programming</h2>
             <ul>
-                <li>Structured programming in C++</li>
-                <li>Object-Oriented Programming and Data Structures in Java</li>
-                <li>Front-end: HTML, CSS, JavaScript and React</li>
+                <li>Front-end: HTML, CSS, Tailwind CSS, JavaScript and React</li>
                 <li>Back-end: Spring and MySQL</li>
-                <li>Others: Markdown, Python, Netlify, Insomnia, Figma and Notion</li>
+                <li>Mobile: Flutter</li>
+                <li>Others: Python, Firebase, Netlify, Insomnia, Figma and Notion</li>
             </ul>
         </section>
-        <section>
+        <section class="sectionskill">
             <h2>Other Skills</h2>
             <ul>
                 <li>Intermediate level of English</li>
@@ -20,7 +19,6 @@
             </ul>
         </section>
     </section>
-
 </template>
 
 <script>
@@ -30,15 +28,23 @@ export default {
 </script>
 
 <style scoped>
+
+h2{
+    text-align: center;
+}
 .sectionskills{
-    background-color: var(--accent-color);
-    border-radius: 10px;
-    padding: 10px;
-    margin-inline: 30px;
-    margin-bottom: 20px;
+
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.sectionskill{
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    padding: 50px;
+    margin-inline: 30px;
+    margin-bottom: 20px;
 }
 
 @media screen and (max-width: 768px) {

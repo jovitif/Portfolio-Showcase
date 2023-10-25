@@ -11,7 +11,6 @@
       </div>
       <nav class="menu" :class="{ active: isMenuOpen }">
         <ul>
-          <li><a href="#Home">Home</a></li>
           <li><a href="#About">About</a></li>
           <li><a href="#Skills">Skills</a></li>
           <li><a href="#Projects">Projects</a></li>
@@ -19,8 +18,9 @@
       </nav>
     </header>
   </template>
-  
+
   <script>
+
   export default {
     name: 'HeaderComponent',
     data() {
@@ -31,11 +31,15 @@
     methods: {
       toggleMenu() {
         this.isMenuOpen = !this.isMenuOpen;
-      }
+      },
+      myFunction() {
+        var element = document.body;
+        element.classList.toggle("white-mode");
+    }
     }
   };
   </script>
-  
+
   <style scoped>
   header {
     display: flex;
@@ -50,24 +54,24 @@
     width: 100%;
     z-index: 100;
   }
-  
+
   .logo {
     display: flex;
     align-items: center;
   }
-  
+
   .logo img {
     margin-right: 10px;
   }
-  
+
   nav ul {
     display: flex;
   }
-  
+
   nav ul li {
     margin-right: 20px;
   }
-  
+
   @media (max-width: 768px) {
     .menu ul {
       flex-direction: column;
@@ -82,38 +86,43 @@
       opacity: 0;
       transition: opacity 0.3s ease;
     }
-  
+
     .menu.active ul {
       opacity: 1;
       visibility: visible;
     }
-  
+
     .menu li {
       margin-right: 0;
       margin-bottom: 1rem;
     }
-  
+
     .menu a {
       color: white;
     }
-  
+
     header {
       display: flex;
       flex-direction: column;
     }
-  
+
     ul {
       display: flex;
       padding-top: 10px;
       flex-direction: column;
     }
   }
-  
+
   .menu-toggle {
     display: none;
     cursor: pointer;
   }
-  
+
+  .white-mode {
+    background-color: white;
+    color: blue;
+  }
+
   @media (max-width: 768px) {
     .menu-toggle {
       display: flex;
@@ -122,7 +131,7 @@
       width: 30px;
       height: 20px;
     }
-  
+
     .menu-toggle span {
       width: 100%;
       height: 3px;
@@ -130,18 +139,17 @@
       display: block;
       transition: all 0.3s ease;
     }
-  
+
     .menu-toggle.active span:first-child {
       transform: rotate(45deg) translate(5px, 5px);
     }
-  
+
     .menu-toggle.active span:nth-child(2) {
       opacity: 0;
     }
-  
+
     .menu-toggle.active span:last-child {
       transform: rotate(-45deg) translate(5px, -5px);
     }
   }
   </style>
-  

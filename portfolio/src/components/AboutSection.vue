@@ -1,5 +1,5 @@
 <template>
-    <section class="sectionsobre" id="About">
+    <section id="About" class="sectionsobre" >
         <section class="profile">
             <div class="card">
                 <a href="https://github.com/jovitif" target="_blank"><img src="../assets/profile.png" alt="Foto de perfil"></a>
@@ -44,7 +44,7 @@ export default {
 .about{
     flex-wrap: wrap;
  }
- 
+
  .social-info {
      margin-top: 20px;
  }
@@ -61,5 +61,5 @@ export default {
         margin: 20px;
       }
  }
- 
+
 </style>
