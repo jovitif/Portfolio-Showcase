@@ -3,10 +3,11 @@
         <section class="sectionskill">
             <h2>Programming</h2>
             <ul>
-                <li>Front-end: HTML, CSS, Tailwind CSS, JavaScript and React</li>
-                <li>Back-end: Spring and MySQL</li>
+                <li>Front-end: HTML, CSS, JavaScript and Vue</li>
+                <li>Back-end: Spring, Node.js and MySQL</li>
                 <li>Mobile: Flutter</li>
-                <li>Others: Python, Firebase, Netlify, Insomnia, Figma and Notion</li>
+                <li>Cloud: AWS</li>
+                <li>Machine Learning: Python</li>
             </ul>
         </section>
         <section class="sectionskill">
@@ -31,9 +32,14 @@ export default {
 
 h2{
     text-align: center;
+    color: aliceblue;
+}
+
+li{
+    color: aliceblue;
+    font-weight: bold;
 }
 .sectionskills{
-
     display: flex;
     flex-direction: row;
     justify-content: space-around;
