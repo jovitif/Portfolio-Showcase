@@ -51,14 +51,14 @@
   }
   </script>
 
-  <style>
+  <style >
   @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,600&display=swap');
 
   :root {
-      --primary-color: #e6edf3;
-      --secondary-color: #fe428e;
-      --background-color: #141321;
-      --accent-color: #1d1a28;
+      --primary-color: #141321;
+      --secondary-color: #00254d;
+      --background-color: #e6edf3;
+      --accent-color: #2165AE;
   }
 
   * {
@@ -76,14 +76,9 @@
       color: var(--secondary-color);
   }
 
-  span{
-      color: var(--secondary-color);
-      font-weight: bold;
-  }
-
+ 
   body {
       background-color: var(--background-color);
-      background-image: url('../assets/programming-code-signs.png');
       background-position: center;
       background-repeat: no-repeat;
       background-attachment: fixed;
@@ -92,10 +87,6 @@
 
   img {
       width: 50px;
-  }
-
-  h1{
-      font-size: 23px;
   }
 
 

@@ -41,6 +41,11 @@
   </script>
 
   <style scoped>
+  h1{
+    font-size: 23px;
+    color: #e6edf3;
+}
+
   header {
     display: flex;
     justify-content: space-between;
@@ -66,10 +71,12 @@
 
   nav ul {
     display: flex;
+    
   }
 
   nav ul li {
     margin-right: 20px;
+    
   }
 
   @media (max-width: 768px) {
@@ -98,7 +105,7 @@
     }
 
     .menu a {
-      color: white;
+      color: #e6edf3;
     }
 
     header {
@@ -110,12 +117,15 @@
       display: flex;
       padding-top: 10px;
       flex-direction: column;
+      
     }
+
   }
 
   .menu-toggle {
     display: none;
     cursor: pointer;
+    
   }
 
   .white-mode {
@@ -130,6 +140,7 @@
       justify-content: space-between;
       width: 30px;
       height: 20px;
+      
     }
 
     .menu-toggle span {

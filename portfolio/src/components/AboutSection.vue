@@ -14,7 +14,7 @@
         <section class="about">
             <h3>About Me</h3>
 
-<p>Hi, my name is <span>João Vitor</span> and I'm a computer science undergraduate student at
+<p>Hi, i'm <span>João Vitor</span> and I'm a computer science undergraduate student at
 <abbr title="Universidade Federal do Semi-Árido"><a href="https://pt.wikipedia.org/wiki/Universidade_Federal_Rural_do_Semi-%C3%81rido" target="_blank">UFERSA</a></abbr>. Currently in my 5th semester, I am dedicated to becoming a skilled full-cycle developer, equipped with knowledge in essential technologies sought after in the job market. My experience lies in web development and Java desktop application development.</p>
             <div class="social-info">
                 <p>Other Social Media:</p>
@@ -32,6 +32,12 @@ export default {
 </script>
 
 <style scoped>
+
+span{
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
 
 .sectionsobre{
     display: flex;
