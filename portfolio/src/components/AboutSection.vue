@@ -14,8 +14,8 @@
         <section class="about">
             <h3>About Me</h3>
 
-<p>Hi, i'm <span>João Vitor</span> and I'm a computer science undergraduate student at
-<abbr title="Universidade Federal do Semi-Árido"><a href="https://pt.wikipedia.org/wiki/Universidade_Federal_Rural_do_Semi-%C3%81rido" target="_blank">UFERSA</a></abbr>. Currently in my 6th semester, I am dedicated to transitioning into a skilled full-cycle developer, with a focus on cloud technologies. My goal is to specialize in cloud development while leveraging my experience in web, mobile, and artificial intelligence application development.</p>
+            <p>Hi, i'm <span>João Vitor</span> and I'm a computer science undergraduate student at
+            <abbr title="Universidade Federal do Semi-Árido"><a href="https://pt.wikipedia.org/wiki/Universidade_Federal_Rural_do_Semi-%C3%81rido" target="_blank">UFERSA</a></abbr>. Currently in my 6th semester, I am dedicated to transitioning into a skilled full-cycle developer, with a focus on cloud technologies. My goal is to specialize in cloud development while leveraging my experience in web, mobile, and artificial intelligence application development.</p>
             <div class="social-info">
                 <p>Other Social Media:</p>
                 <p>Instagram: <a href="https://instagram.com/https://www.instagram.com/j2aov/" target="_blank"><span>@j2aov</span></a></p>
@@ -45,7 +45,18 @@ span{
     justify-content: space-between;
 }
 
+.card a, span{
+    color: aliceblue;
+}
 
+.card {
+    transition: transform 0.3s ease;
+    color: aliceblue;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
 .about{
     flex-wrap: wrap;
  }

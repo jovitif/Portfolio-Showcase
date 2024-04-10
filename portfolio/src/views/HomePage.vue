@@ -54,8 +54,8 @@
   <style >
   @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,600&display=swap');
 
- 
-  
+
+
   :root {
       --primary-color: #141321;
       --secondary-color: #00254d;
@@ -69,16 +69,12 @@
       box-sizing: border-box;
       list-style: none;
       font-family: 'Poppins', sans-serif;
-      color: var(--primary-color);
       text-decoration: none;
 
   }
 
-  a:hover{
-      color: var(--secondary-color);
-  }
 
- 
+
   body {
       background-color: var(--background-color);
       background-position: center;
@@ -93,14 +89,13 @@
 
 
   h2 {
-      color: var(--primary-color);
       font-size: 24px;
       font-weight: 600;
       line-height: 1.5;
   }
 
   .section-wrapper {
-    margin-top: 100px; /* Ajuste a quantidade de espaço conforme necessário */
+    margin-top: 100px;
   }
 
   .main {

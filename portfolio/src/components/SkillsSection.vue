@@ -3,11 +3,39 @@
         <section class="sectionskill">
             <h2>Programming</h2>
             <ul>
-                <li>Front-end: HTML, CSS, JavaScript and Vue</li>
-                <li>Back-end: Spring, Node.js and MySQL</li>
-                <li>Mobile: Flutter</li>
-                <li>Cloud: AWS</li>
-                <li>Machine Learning: Python</li>
+                <li>
+                    <h3>Machine Learning</h3>
+                    <img src="../assets/python.svg" />
+                    <h4>Python</h4>
+                </li>
+                <li>
+                    <h3>Mobile</h3>
+                    <img src="../assets/flutter.svg" />
+                    <h4>Flutter</h4>
+                </li>
+
+                <li>
+                    <h3>Database</h3>
+                    <img src="../assets/mysql.svg" />
+                    <h4>MySQL</h4>
+                </li>
+
+                <li>
+                    <h3>Cloud Computing</h3>
+                    <img src="../assets/aws.svg" />
+                    <h4>AWS</h4>
+                </li>
+
+                <li>
+                    <h3>Backend</h3>
+                    <img src="../assets/django.svg" />
+                    <h4>Django</h4>
+                </li>
+                <li>
+                    <h3>Frontend</h3>
+                    <img src="../assets/vue.svg" />
+                    <h4>Vue.js</h4>
+                </li>
             </ul>
         </section>
         <section class="sectionskill">
@@ -30,15 +58,33 @@ export default {
 
 <style scoped>
 
-h2{
+ul {
+    column-count: 2;
+    column-gap: 20px;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  h2 {
     text-align: center;
     color: aliceblue;
-}
+  }
 
-li{
+  li {
+    display: inline-block; /* Alinha os itens horizontalmente */
     color: aliceblue;
     font-weight: bold;
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+    width: 100%; /* Ocupa a largura total da coluna */
+  }
+
+li:hover{
+    transform: scale(1.05);
+
 }
+
 .sectionskills{
     display: flex;
     flex-direction: row;
@@ -59,5 +105,9 @@ li{
         flex-direction: column;
 
     }
+
+    ul {
+        column-count: 1;
+      }
 }
 </style>

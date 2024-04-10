@@ -2,7 +2,7 @@
     <header>
       <a class="logo" href="index.html">
         <img src="../assets/programming-code-signs.png" alt="coding">
-        <h1>Jovitif</h1>
+        <h1>JOVITIF</h1>
       </a>
       <div class="menu-toggle" :class="{ active: isMenuOpen }" @click="toggleMenu">
         <span></span>
@@ -69,14 +69,18 @@
     margin-right: 10px;
   }
 
+  nav{
+    color: #e6edf3;
+  }
+
   nav ul {
     display: flex;
-    
   }
 
   nav ul li {
     margin-right: 20px;
-    
+
+
   }
 
   @media (max-width: 768px) {
@@ -117,7 +121,7 @@
       display: flex;
       padding-top: 10px;
       flex-direction: column;
-      
+
     }
 
   }
@@ -125,7 +129,7 @@
   .menu-toggle {
     display: none;
     cursor: pointer;
-    
+
   }
 
   .white-mode {
@@ -140,7 +144,7 @@
       justify-content: space-between;
       width: 30px;
       height: 20px;
-      
+
     }
 
     .menu-toggle span {
