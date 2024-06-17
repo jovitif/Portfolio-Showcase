@@ -13,7 +13,10 @@
         <ul>
           <li><a href="#About">About</a></li>
           <li><a href="#Skills">Skills</a></li>
+          <li><a href="#Experience">Experience</a></li>
           <li><a href="#Projects">Projects</a></li>
+          <li><a href="#Certifications">Certifications</a></li>
+          <li><a href="#Contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -46,18 +49,33 @@
     color: #e6edf3;
 }
 
+.menu a {
+  color: #e6edf3;
+}
+
+.menu a:hover {
+  color: #e6edf3;
+}
+
+.menu a:active {
+  color: #e6edf3;
+}
+
+.menu a:visited {
+  color: #e6edf3;
+}
+
+
   header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 6rem;
-    background-color: var(--accent-color);
-    box-shadow: 0px 3px 10px var(--accent-color);
+    padding: 1rem 6rem;
+    background-color: black;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 100;
   }
 
   .logo {
@@ -83,6 +101,7 @@
 
   }
 
+
   @media (max-width: 768px) {
     .menu ul {
       flex-direction: column;
@@ -90,7 +109,7 @@
       position: absolute;
       top: 100%;
       left: 0;
-      background-color: var(--accent-color);
+      background-color: black;
       visibility: hidden;
       width: 100%;
       padding: 1rem 0;
@@ -133,8 +152,8 @@
   }
 
   .white-mode {
-    background-color: white;
-    color: blue;
+    background-color: #e6edf3;
+    color: black;
   }
 
   @media (max-width: 768px) {
@@ -150,7 +169,7 @@
     .menu-toggle span {
       width: 100%;
       height: 3px;
-      background-color: var(--primary-color);
+      background-color: #e6edf3;
       display: block;
       transition: all 0.3s ease;
     }

@@ -54,13 +54,11 @@
   <style >
   @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,600&display=swap');
 
-
-
   :root {
       --primary-color: #141321;
       --secondary-color: #00254d;
       --background-color: #e6edf3;
-      --accent-color: #2165AE;
+      --accent-color: black;
   }
 
   * {
