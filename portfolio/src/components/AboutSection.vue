@@ -77,9 +77,7 @@ address{
     color: aliceblue;
   }
 
-  .card:hover {
-    transform: scale(1.05);
-  }
+
 .about{
     flex-wrap: wrap;
     text-align: justify;
@@ -89,8 +87,16 @@ address{
      margin-top: 20px;
  }
 
- .social-info a{
+ .social-info img{
     margin: 10px;
+
+ }
+
+
+ .card:hover,
+ .social-info img:hover {
+   transition: transform 0.3s ease;
+   transform: scale(1.05);
  }
 
  @media screen and (max-width: 768px) {
