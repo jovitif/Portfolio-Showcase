@@ -4,8 +4,8 @@
             <div class="card">
                 <a href="https://github.com/jovitif" target="_blank"><img src="../assets/profile.jpg" alt="Foto de perfil"></a>
                 <div class="card-info">
-                    <a href="https://github.com/jovitif" target="_blank"><span>@Jovitif</span></a>
-                    <a href="mailto:joaosales911@gmail.com">joaosales911@gmail.com</a>
+                    <span>João Vitor Fernandes de Sales</span>
+                    <p>DevOps - AWS | Node.js | Tensor Flow | Vue.js | Flutter</p>
                     <p>Computer Science Student</p>
                     <address>Mossoró, Rio Grande do Norte, Brazil</address>
                 </div>
@@ -13,13 +13,16 @@
         </section>
         <section class="about">
             <h3>About Me</h3>
-            <p>Hi, I'm <span>João Vitor Fernandes de Sales</span> (preferably called <span>João Sales</span>) and I'm a computer science undergraduate student at
-                <abbr title="Universidade Federal do Semi-Árido"><a href="https://pt.wikipedia.org/wiki/Universidade_Federal_Rural_do_Semi-%C3%81rido" target="_blank">UFERSA</a></abbr>. Throughout my degree, I have been exposed to several important subjects, such as Web Development, Machine Learning, Mobile Development, and Software Engineering, which have given me a broad understanding of computing. I'm currently developing my skills in <span>DevOps</span>, <span>Machine Learning</span>, and <span>AWS Cloud Computing</span>, but I'm also looking to develop web and mobile projects.</p>
+            <p>I am a computer science student starting my 7th semester. I interned at a company called Compass, in partnership with AWS, and I have a strong interest in cloud computing and artificial intelligence. Currently, I am starting a research project aimed at developing an application that uses artificial intelligence to assist in the process of learning English. Additionally, I have also been focusing on developing personal projects.</p>
 
                     <div class="social-info">
-                <p>Other Social Media:</p>
-                <p>Instagram: <a href="https://instagram.com/https://www.instagram.com/j2aov/" target="_blank"><span>@j2aov</span></a></p>
-                <p>Linkedin: <a href="https://www.linkedin.com/in/jo%C3%A3o-sales-058747211/" target="_blank"><span>João Sales</span></a></p>
+                <p>How to Contact Me</p>
+                <a href="mailto:joaosales911@gmail.com"> <img src="../assets/email.png" alt="email"></a>
+                <a href="https://www.linkedin.com/in/jo%C3%A3o-sales-058747211/" target="_blank"><img src="../assets/linkedin.png" alt="linkedin"></a>
+                <a href="https://github.com/jovitif" target="_blank"><img src="../assets/github.png" alt="github"></a>
+
+                <a href="https://instagram.com/https://www.instagram.com/j2aov/" target="_blank"><img src="../assets/instagram.png" alt="instagram"></a>
+
             </div>
         </section>
     </section>
@@ -38,8 +41,18 @@ export default {
 }
 
 span{
-
+    color: #171717;
     font-weight: bold;
+}
+
+.card p{
+    color: #191919;
+    font-size: 12px;
+}
+
+address{
+    color: #666666;
+    font-size: 12px;
 }
 
 .sectionsobre{
@@ -49,12 +62,14 @@ span{
     justify-content: space-between;
 }
 
-.about span, a{
-    color: black;
+.about {
+    background-color: #ffffff;
+    padding: 80px;
+    border-radius: 10px;
 }
 
 .card a{
-    color: aliceblue;
+    color: #171717;
 }
 
 .card {
@@ -72,6 +87,10 @@ span{
 
  .social-info {
      margin-top: 20px;
+ }
+
+ .social-info a{
+    margin: 10px;
  }
 
  @media screen and (max-width: 768px) {

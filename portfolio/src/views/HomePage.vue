@@ -11,21 +11,17 @@
           </div>
           </div>
 
-        <hr id="Skills">
         <div class="display">
             <div class="central-header" >
-                <h2>My Skills:</h2>
             </div>
 
             <SKillsSection></SKillsSection>
         </div>
 
 
-        <hr>
 
 
         <div class="central-header">
-            <h2>My Projects:</h2>
         </div>
 
         <ProjectsSection></ProjectsSection>
@@ -57,8 +53,8 @@
   :root {
       --primary-color: #141321;
       --secondary-color: #00254d;
-      --background-color: #e6edf3;
-      --accent-color: black;
+      --background-color: #f4f2ee;
+      --accent-color: #ffffff;
   }
 
   * {

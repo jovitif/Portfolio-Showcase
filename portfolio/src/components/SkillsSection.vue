@@ -1,12 +1,12 @@
 <template>
     <section class="sectionskills">
         <section class="sectionskill">
-            <h2>Programming</h2>
+            <h2>Hard Skills</h2>
             <ul>
                 <li>
                     <h3>Machine Learning</h3>
-                    <img src="../assets/python.svg" alt="Python Logo" />
-                    <h4>Python</h4>
+                    <img src="../assets/tensorflow.png" alt="Python Logo" />
+                    <h4>Tensor Flow</h4>
                 </li>
                 <li>
                     <h3>Mobile</h3>
@@ -25,8 +25,8 @@
                 </li>
                 <li>
                     <h3>Backend</h3>
-                    <img src="../assets/spring.png" alt="Spring Boot Logo" />
-                    <h4>Spring Boot</h4>
+                    <img src="../assets/nodejs.png" alt="Spring Boot Logo" />
+                    <h4>Node.JS</h4>
                 </li>
                 <li>
                     <h3>Frontend</h3>
@@ -36,7 +36,7 @@
             </ul>
         </section>
         <section class="sectionskill">
-            <h2>Other Skills</h2>
+            <h2>Soft Skills</h2>
             <ul>
                 <li>
                     <h3>Intermediate level of English</h3>
@@ -97,12 +97,19 @@ li {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: aliceblue;
     font-weight: bold;
     text-align: center;
     transition: transform 0.3s ease;
     margin-bottom: 20px;
     width: 200px; /* Define uma largura fixa para os itens */
+}
+
+h3{
+    color: #0a66c2;
+}
+
+h4{
+    color: #666666;
 }
 
 li:hover {

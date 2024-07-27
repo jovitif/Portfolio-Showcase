@@ -1,7 +1,7 @@
 <template>
     <header>
       <a class="logo" href="index.html">
-        <img src="../assets/programming-code-signs.png" alt="coding">
+      <!--<img src="../assets/programming-code-signs.png" alt="coding">-->
         <h1>JOVITIF</h1>
       </a>
       <div class="menu-toggle" :class="{ active: isMenuOpen }" @click="toggleMenu">
@@ -46,23 +46,23 @@
   <style scoped>
   h1{
     font-size: 23px;
-    color: #e6edf3;
+    color: #0a66c2;
 }
 
 .menu a {
-  color: #e6edf3;
+  color: #666666;
 }
 
 .menu a:hover {
-  color: #e6edf3;
+  color: black;
 }
 
 .menu a:active {
-  color: #e6edf3;
+  color: black;
 }
 
 .menu a:visited {
-  color: #e6edf3;
+  color: black;
 }
 
 
@@ -71,7 +71,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 6rem;
-    background-color: black;
+    background-color: #ffffff;
     position: fixed;
     top: 0;
     left: 0;
@@ -88,7 +88,7 @@
   }
 
   nav{
-    color: #e6edf3;
+    color: #666666;
   }
 
   nav ul {
@@ -109,7 +109,7 @@
       position: absolute;
       top: 100%;
       left: 0;
-      background-color: black;
+      background-color: #ffffff;
       visibility: hidden;
       width: 100%;
       padding: 1rem 0;
@@ -128,7 +128,7 @@
     }
 
     .menu a {
-      color: #e6edf3;
+      color: #666666;
     }
 
     header {
@@ -152,7 +152,7 @@
   }
 
   .white-mode {
-    background-color: #e6edf3;
+    background-color: #666666;
     color: black;
   }
 
@@ -169,7 +169,7 @@
     .menu-toggle span {
       width: 100%;
       height: 3px;
-      background-color: #e6edf3;
+      background-color: #666666;
       display: block;
       transition: all 0.3s ease;
     }
