@@ -53,13 +53,12 @@
             <section class="item">
                 <section class="projeto">
                     <div class="card">
-                        <img src="../assets/test.png" alt="Test Image">
+                        <img src="../assets/sintonized.png" alt="Sintonized">
                         <div class="card-info">
-                            <p><span>Test Generator</span></p>
-                            <p>Project developed for the object-oriented programming course</p>
-                            <p>Technologies: Java, MVC, MySQL, JavaFX</p>
-                            <a href="https://github.com/jovitif/Test-Generator-System" target="_blank">Project on
-                                GitHub</a>
+                            <p><span>Sintonized</span></p>
+                            <p>Audio Synthesis Application With Artificial Intelligence</p>
+                            <p>Technologies: Vue.js & AWS</p>
+                            <a href="https://github.com/jovitif/Test-Generator-System" target="_blank">Preview</a>
                         </div>
                     </div>
                 </section>
@@ -112,6 +111,10 @@ export default {
 </script>
 
 <style scoped>
+
+span{
+   color: #0a66c2;
+}
 
 h2{
     display: flex;
