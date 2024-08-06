@@ -18,10 +18,10 @@
                     <div class="social-info">
                 <p>How to Contact Me</p>
                 <a href="mailto:joaosales911@gmail.com"> <img src="../assets/email.png" alt="email"></a>
-                <a href="https://www.linkedin.com/in/jo%C3%A3o-sales-058747211/" target="_blank"><img src="../assets/linkedin.png" alt="linkedin"></a>
+                <a href="https://www.linkedin.com/in/joaofdsales/" target="_blank"><img src="../assets/linkedin.png" alt="linkedin"></a>
                 <a href="https://github.com/jovitif" target="_blank"><img src="../assets/github.png" alt="github"></a>
 
-                <a href="https://instagram.com/https://www.instagram.com/j2aov/" target="_blank"><img src="../assets/instagram.png" alt="instagram"></a>
+                <a href="https://instagram.com/https://www.instagram.com/joaofdsales/" target="_blank"><img src="../assets/instagram.png" alt="instagram"></a>
 
             </div>
         </section>
