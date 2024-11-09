@@ -1,144 +1,113 @@
 <template>
-    <section class="sectionskills">
-        <section class="sectionskill">
-            <h2>Hard Skills</h2>
-            <ul>
-                <li>
-                    <h3>Machine Learning</h3>
-                    <img src="../assets/tensorflow.png" alt="Python Logo" />
-                    <h4>Tensor Flow</h4>
-                </li>
-                <li>
-                    <h3>Mobile</h3>
-                    <img src="../assets/flutter.svg" alt="Flutter Logo" />
-                    <h4>Flutter</h4>
-                </li>
-                <li>
-                    <h3>Database</h3>
-                    <img src="../assets/mysql.svg" alt="MySQL Logo" />
-                    <h4>MySQL</h4>
-                </li>
-                <li>
-                    <h3>Cloud Computing</h3>
-                    <img src="../assets/aws.svg" alt="AWS Logo" />
-                    <h4>AWS</h4>
-                </li>
-                <li>
-                    <h3>Backend</h3>
-                    <img src="../assets/nodejs.png" alt="Spring Boot Logo" />
-                    <h4>Node.JS</h4>
-                </li>
-                <li>
-                    <h3>Frontend</h3>
-                    <img src="../assets/vue.svg" alt="Vue.js Logo" />
-                    <h4>Vue.js</h4>
-                </li>
-            </ul>
-        </section>
-        <section class="sectionskill">
-            <h2>Soft Skills</h2>
-            <ul>
-                <li>
-                    <h3>Intermediate level of English</h3>
-                    <img src="../assets/reino-unido.png" alt="UK Flag" />
-                </li>
-                <li>
-                    <h3>Basic level of Spanish</h3>
-                    <img src="../assets/espanha.png" alt="Spain Flag"/>
-                </li>
-                <li>
-                    <h3>Active learning</h3>
-                    <img src="../assets/learning.png" alt="Learning Icon">
-                </li>
-                <li>
-                    <h3>Communication</h3>
-                    <img src="../assets/comunicacao.png" alt="Communication Icon" />
-                </li>
-            </ul>
-        </section>
-    </section>
+    <v-container fluid class="sectionskills">
+        <v-row>
+            <!-- Hard Skills Section -->
+            <v-col cols="12" md="6">
+                <v-card class="sectionskill">
+                    <v-card-title class="pa-3">
+                        <h2>Hard Skills</h2>
+                    </v-card-title>
+                    <v-card-text>
+                        <v-row>
+                            <v-col cols="12" sm="6" md="4" v-for="(skill, index) in hardSkills" :key="index">
+                                <v-card class="text-center" outlined>
+                                    <v-card-title class="pa-2">
+                                        <h3>{{ skill.title }}</h3>
+                                    </v-card-title>
+                                    <v-card-subtitle>
+                                        <v-img :src="skill.image" class="skill-icon" :alt="`${skill.title} Logo`"></v-img>
+                                    </v-card-subtitle>
+                                    <v-card-text>
+                                        <h4>{{ skill.subtitle }}</h4>
+                                    </v-card-text>
+                                </v-card>
+                            </v-col>
+                        </v-row>
+                    </v-card-text>
+                </v-card>
+            </v-col>
+
+            <!-- Soft Skills Section -->
+            <v-col cols="12" md="6">
+                <v-card class="sectionskill">
+                    <v-card-title class="pa-3">
+                        <h2>Soft Skills</h2>
+                    </v-card-title>
+                    <v-card-text>
+                        <v-row>
+                            <v-col cols="12" sm="6" md="4" v-for="(skill, index) in softSkills" :key="index">
+                                <v-card class="text-center" outlined>
+                                    <v-card-title class="pa-2">
+                                        <h3>{{ skill.title }}</h3>
+                                    </v-card-title>
+                                    <v-card-subtitle>
+                                        <v-img :src="skill.image" class="skill-icon" :alt="`${skill.title} Icon`"></v-img>
+                                    </v-card-subtitle>
+                                </v-card>
+                            </v-col>
+                        </v-row>
+                    </v-card-text>
+                </v-card>
+            </v-col>
+        </v-row>
+    </v-container>
 </template>
 
 <script>
 export default {
     name: "SkillsSection",
-}
+    data() {
+        return {
+            hardSkills: [
+                { title: "Machine Learning", image: require("../assets/tensorflow.png"), subtitle: "Tensor Flow" },
+                { title: "Mobile", image: require("../assets/flutter.svg"), subtitle: "Flutter" },
+                { title: "Database", image: require("../assets/mysql.svg"), subtitle: "MySQL" },
+                { title: "Cloud Computing", image: require("../assets/aws.svg"), subtitle: "AWS" },
+                { title: "Backend", image: require("../assets/nodejs.png"), subtitle: "Node.JS" },
+                { title: "Frontend", image: require("../assets/vuetify.svg"), subtitle: "Vuetify.js" },
+            ],
+            softSkills: [
+                { title: "Intermediate level of English", image: require("../assets/reino-unido.png") },
+                { title: "Basic level of Spanish", image: require("../assets/espanha.png") },
+                { title: "Active learning", image: require("../assets/learning.png") },
+                { title: "Communication", image: require("../assets/comunicacao.png") },
+            ],
+        };
+    },
+};
 </script>
-<style scoped>
-html, body {
-    height: 100%;
-    margin: 0;
-}
 
-#app {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Garante que o app ocupe a altura total da janela */
+<style scoped>
+.skill-icon {
+    max-width: 60px;
+    margin:20px;
 }
 
 .sectionskills {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    flex: 1; /* Faz com que sectionskills ocupe o espaço restante disponível */
-}
-
-ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 0;
-    list-style-type: none;
-}
-
-li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    text-align: center;
-    transition: transform 0.3s ease;
-    margin-bottom: 20px;
-    width: 200px; /* Define uma largura fixa para os itens */
-}
-
-h3{
-    color: #0a66c2;
-}
-
-h4{
-    color: #666666;
-}
-
-li:hover {
-    transform: scale(1.05);
+    padding: 20px;
 }
 
 .sectionskill {
-    background-color: var(--accent-color);
+    background-color: var(--v-theme-background);
     border-radius: 10px;
-    padding: 50px;
-    margin-inline: 30px;
-    margin-bottom: 20px;
-    flex: 1; /* Permite que as seções ocupem o mesmo espaço disponível */
-    max-width: 500px; /* Define uma largura máxima para evitar que as seções fiquem muito largas */
+    padding: 30px;
+    margin: 10px;
 }
 
-@media screen and (max-width: 768px) {
-    .sectionskills {
-        flex-direction: column;
-        align-items: center; /* Centraliza as seções verticalmente */
-    }
+h3 {
+    color: #0a66c2;
+}
 
-    ul {
-        flex-direction: column; /* Ajusta os itens para uma única coluna em telas pequenas */
-    }
+h4 {
+    color: #666666;
+}
 
-    .sectionskill {
-        max-width: none; /* Remove a largura máxima em telas pequenas */
-        width: 100%; /* Faz com que as seções ocupem toda a largura disponível */
-    }
+.v-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.sectionskill {
+    overflow: hidden; /* Evita transbordo */
 }
 </style>

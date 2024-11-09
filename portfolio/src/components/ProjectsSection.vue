@@ -1,140 +1,116 @@
 <template>
+    <v-container fluid>
+      <h2 class="text-center mb-6">Mobile Apps</h2>
+      <v-row>
+        <v-col cols="12" md="4" v-for="project in mobileProjects" :key="project.title">
+          <v-card class="mb-6" elevation="2">
+            <v-img :src="require(`@/assets/${project.image}`)" height="200px" :alt="project.alt" />
+            <v-card-title class="text-h6 text-center">{{ project.title }}</v-card-title>
+            <v-card-subtitle class="text-center">{{ project.description }}</v-card-subtitle>
+            <v-card-text class="text-center">Technologies: {{ project.technologies }}</v-card-text>
+            <v-card-actions class="justify-center">
+              <v-btn :href="project.githubLink" target="_blank" color="primary" text>Project on GitHub</v-btn>
+              <v-btn v-if="project.downloadLink" :href="project.downloadLink" color="secondary" text>Download APK</v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-col>
+      </v-row>
 
-    <h2>Mobile Apps</h2>
-    <section class="sectionprojetos" id="Projects">
+      <h2 class="text-center mb-6">Web Apps</h2>
+      <v-row>
+        <v-col cols="12" md="4" v-for="project in webProjects" :key="project.title">
+          <v-card class="mb-6" elevation="2">
+            <v-img :src="require(`@/assets/${project.image}`)" height="200px" :alt="project.alt" />
+            <v-card-title class="text-h6 text-center">{{ project.title }}</v-card-title>
+            <v-card-subtitle class="text-center">{{ project.description }}</v-card-subtitle>
+            <v-card-text class="text-center">Technologies: {{ project.technologies }}</v-card-text>
+            <v-card-actions class="justify-center">
+              <v-btn :href="project.githubLink" target="_blank" color="primary" text>Project on GitHub</v-btn>
+              <v-btn v-if="project.previewLink" :href="project.previewLink" target="_blank" color="secondary" text>Preview</v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
+  </template>
 
-        <section class="item">
-            <section class="projeto">
-                <div class="card">
-                    <img src="../assets/logo.png" alt="Quizzefy Image">
-                    <div class="card-info">
-                        <p><span>Quizzefy</span></p>
-                        <p>Project developed for the mobile development course</p>
-                        <p>Technologies: Flutter</p>
-                        <a href="https://github.com/jovitif/Quizzefy-Mobile-App" target="_blank">Project on GitHub</a>
-                        <a href="/src/apks/quizzefy/app-debug.apk" download>Download APK</a>
-                    </div>
-                </div>
-            </section>
-        </section>
-        <section class="item">
-            <section class="projeto">
-                <div class="card">
-                    <img src="../assets/MusicConnect.png" alt="Music Image">
-                    <div class="card-info">
-                        <p><span>App de Imoveis</span></p>
-                        <p>Project developed independently</p>
-                        <p>Technologies: Flutter</p>
-                        <a href="https://github.com/jovitif/MusiConnect" target="_blank">Project on GitHub</a>
-                        <a href="https://musicconnect.netlify.app/" target="_blank">Preview</a>
-                    </div>
-                </div>
-            </section>
-        </section>
-        <section class="item">
-            <section class="projeto">
-                <div class="card">
-                    <img src="../assets/MusicConnect.png" alt="Music Image">
-                    <div class="card-info">
-                        <p><span>Musiconnect</span></p>
-                        <p>Project developed independently</p>
-                        <p>Technologies: Flutter</p>
-                        <a href="https://github.com/jovitif/MusiConnect" target="_blank">Project on GitHub</a>
-                        <a href="https://musicconnect.netlify.app/" target="_blank">Preview</a>
-                    </div>
-                </div>
-            </section>
-        </section>
-</section>
-
-<h2>Web Apps</h2>
-        <section class="sectionprojetos" id="Projects">
-
-            <section class="item">
-                <section class="projeto">
-                    <div class="card">
-                        <img src="../assets/sintonized.png" alt="Sintonized">
-                        <div class="card-info">
-                            <p><span>Sintonized</span></p>
-                            <p>Audio Synthesis Application With Artificial Intelligence</p>
-                            <p>Technologies: Vue.js & AWS</p>
-                            <a href="https://github.com/jovitif/Test-Generator-System" target="_blank">Preview</a>
-                        </div>
-                    </div>
-                </section>
-            </section>
-
-
-        <section class="item">
-            <section class="projeto">
-                <div class="card">
-                    <img src="../assets/MusicConnect.png" alt="Music Image">
-                    <div class="card-info">
-                        <p><span>MusiConnect</span></p>
-                        <p>Project developed independently</p>
-                        <p>Technologies: Spring & Vue</p>
-                        <a href="https://github.com/jovitif/MusiConnect" target="_blank">Project on GitHub</a>
-                        <a href="https://musicconnect.netlify.app/" target="_blank">Preview</a>
-                    </div>
-                </div>
-            </section>
-        </section>
-        <section class="item">
-            <section class="projeto">
-                <div class="card">
-                    <img src="../assets/food.png" alt="Food Image">
-                    <div class="card-info">
-                        <p><span>FaceFood</span></p>
-                        <p>Project developed for the web programming course</p>
-                        <p>Technologies: HTML, CSS, JavaScript, React, Tailwind, Spring</p>
-                        <a href="https://github.com/lryanborges/FaceFood" target="_blank">Project on GitHub</a>
-                    </div>
-                </div>
-            </section>
-        </section>
-
-
-
-    </section>
-</template>
-
-<script>
-
-
-export default {
+  <script>
+  export default {
     name: "ProjectsSection",
-    components:{
+    data() {
+      return {
+        mobileProjects: [
+          {
+            title: "Quizzefy",
+            description: "Project developed for the mobile development course",
+            technologies: "Flutter",
+            image: "logo.png",
+            alt: "Quizzefy Image",
+            githubLink: "https://github.com/jovitif/Quizzefy-Mobile-App",
+            downloadLink: "/src/apks/quizzefy/app-debug.apk",
+          },
+          {
+            title: "App de Imoveis",
+            description: "Project developed independently",
+            technologies: "Flutter",
+            image: "MusicConnect.png",
+            alt: "Music Image",
+            githubLink: "https://github.com/jovitif/MusiConnect",
+            previewLink: "https://musicconnect.netlify.app/",
+          },
+          {
+            title: "Musiconnect",
+            description: "Project developed independently",
+            technologies: "Flutter",
+            image: "MusicConnect.png",
+            alt: "Music Image",
+            githubLink: "https://github.com/jovitif/MusiConnect",
+            previewLink: "https://musicconnect.netlify.app/",
+          },
+        ],
+        webProjects: [
+          {
+            title: "Sintonized",
+            description: "Audio Synthesis Application With Artificial Intelligence",
+            technologies: "Vue.js & AWS",
+            image: "sintonized.png",
+            alt: "Sintonized",
+            githubLink: "https://github.com/jovitif/Test-Generator-System",
+            previewLink: "https://github.com/jovitif/Test-Generator-System",
+          },
+          {
+            title: "MusiConnect",
+            description: "Project developed independently",
+            technologies: "Spring & Vue",
+            image: "MusicConnect.png",
+            alt: "Music Image",
+            githubLink: "https://github.com/jovitif/MusiConnect",
+            previewLink: "https://musicconnect.netlify.app/",
+          },
+          {
+            title: "FaceFood",
+            description: "Project developed for the web programming course",
+            technologies: "HTML, CSS, JavaScript, React, Tailwind, Spring",
+            image: "food.png",
+            alt: "Food Image",
+            githubLink: "https://github.com/lryanborges/FaceFood",
+          },
+        ],
+      };
+    },
+  };
+  </script>
 
-    }
-}
-
-</script>
-
-<style scoped>
-
-span{
-   color: #0a66c2;
-}
-
-h2{
-    display: flex;
-    justify-content: center;
-}
-
-.sectionprojetos {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  <style scoped>
+  .text-center {
+    text-align: center;
   }
 
-  .item {
-    flex-basis: calc(33.33% - 20px);
-    margin: 5px;
+  h2 {
+    font-weight: bold;
   }
 
-@media (max-width: 768px) {
-
-}
-</style>
+  .mb-6 {
+    margin-bottom: 24px;
+  }
+  </style>

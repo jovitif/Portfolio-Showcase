@@ -1,26 +1,23 @@
 <template>
-    <router-view default></router-view>
-  </template>
+  <v-app>
+    <v-main>
+      <HomePage/>
+    </v-main>
+  </v-app>
+</template>
 
-  <script>
+<script>
+import HomePage from './views/HomePage.vue'
 
-  export default {
-    name: 'App',
-    components: {
+export default {
+  name: 'App',
 
-    },
-    mounted(){
-    }
-  }
-  </script>
+  components: {
+    HomePage,
+  },
 
-  <style>
-
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-
-  }
-  </style>
+  data: () => ({
+    //
+  }),
+}
+</script>
