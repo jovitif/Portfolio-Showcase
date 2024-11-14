@@ -70,6 +70,14 @@
         ],
         webProjects: [
           {
+            title: "HabitLex",
+            description: "Intelligent habit-generating application",
+            technologies: "HTML, CSS, JavaScript, Flask",
+            image: "habitos.png",
+            alt: "Habit image",
+            githubLink: "https://github.com/jovitif/HabitLex",
+          },
+          {
             title: "Sintonized",
             description: "Audio Synthesis Application With Artificial Intelligence",
             technologies: "Vue.js & AWS",
@@ -87,14 +95,7 @@
             githubLink: "https://github.com/jovitif/MusiConnect",
             previewLink: "https://musicconnect.netlify.app/",
           },
-          {
-            title: "FaceFood",
-            description: "Project developed for the web programming course",
-            technologies: "HTML, CSS, JavaScript, React, Tailwind, Spring",
-            image: "food.png",
-            alt: "Food Image",
-            githubLink: "https://github.com/lryanborges/FaceFood",
-          },
+
         ],
       };
     },
