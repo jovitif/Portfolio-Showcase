@@ -11,13 +11,8 @@ import HomePage from './views/HomePage.vue'
 
 export default {
   name: 'App',
-
   components: {
     HomePage,
   },
-
-  data: () => ({
-    //
-  }),
 }
 </script>

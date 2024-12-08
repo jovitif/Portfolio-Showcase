@@ -116,7 +116,7 @@
 
   @media screen and (max-width: 768px) {
     .section-wrapper {
-      margin-top: 150px; /* Ajuste a quantidade de espaço conforme necessário */
+      margin-top: 150px;
     }
 
     .display {

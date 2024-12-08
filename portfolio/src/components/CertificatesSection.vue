@@ -14,7 +14,7 @@
                         <h2>Certificates</h2>
                     </v-card-title>
                     <v-card-text>
-                        <v-carousel hide-delimiter-background show-arrows>
+                        <v-carousel>
                             <v-carousel-item
                                 v-for="(certificate, index) in certificates"
                                 :key="index"
