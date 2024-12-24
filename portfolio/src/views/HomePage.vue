@@ -2,9 +2,9 @@
   <v-app>
     <HeaderComponent />
 
-    <v-main>
+    <v-main class="vmain">
       <v-container fluid>
-        <v-row class="section-wrapper">
+        <v-row class="section-wrapper justify-center">
           <v-col cols="12">
             <AboutSection />
           </v-col>
@@ -29,7 +29,7 @@
           </v-col>
         </v-row>
 -->
-        
+
 
         <v-row no-gutters>
           <v-col cols="12">
@@ -103,6 +103,8 @@
     line-height: 1.5;
   }
 
+
+
   .section-wrapper {
     margin-top: 100px;
   }
@@ -114,6 +116,10 @@
 
   .display {
     height: 85vh;
+  }
+
+  .vmain{
+    align-self: center;
   }
 
   @media screen and (max-width: 768px) {
