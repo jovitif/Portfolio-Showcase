@@ -75,7 +75,21 @@ export default {
                     link: "https://aws.amazon.com/certification/certified-cloud-practitioner/",
                     image: require('../assets/aigen-1.png'), // Adicione a URL da imagem do certificado aqui
                 },
-                // Adicione mais certificados conforme necessário
+                {
+                    title: "AWS Certified AI Practitioner",
+                    description: "Certification for foundational knowledge of AWS Cloud concepts.",
+                    icon: "mdi-aws",
+                    link: "https://aws.amazon.com/certification/certified-cloud-practitioner/",
+                    image: require('../assets/awscertificacao.png'), // Adicione a URL da imagem do certificado aqui                },
+                 }, // Adicione mais certificados conforme necessário
+                 {
+                    title: "AWS Certified Developer – Associate ",
+                    description: "Certification for foundational knowledge of AWS Cloud concepts.",
+                    icon: "mdi-aws",
+                    link: "https://aws.amazon.com/certification/certified-cloud-practitioner/",
+                    image: require('../assets/awscertificacao.png'), // Adicione a URL da imagem do certificado aqui                },
+                 }, // Adicione mais certificados conforme necessário
+
             ],
         };
     },

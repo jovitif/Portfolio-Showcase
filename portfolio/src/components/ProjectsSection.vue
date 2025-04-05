@@ -1,18 +1,19 @@
 <template>
     <v-container fluid>
-      <h2 class="text-center mb-6">Mobile Apps</h2>
+      <h1 class="text-center mb-6">Micro-SaaS</h1>
       <v-row>
         <v-col cols="12" md="4" v-for="project in mobileProjects" :key="project.title">
           <v-card
           class="mx-auto"
           max-width="400"
         >
-          <v-img
-            class="align-end text-white"
-            height="200"
-            :src="require(`@/assets/${project.image}`)"
-            cover
-          >
+        <v-img
+        class="align-end text-white"
+        height="200"
+        :src="require(`@/assets/${project.image}`)"
+        contain
+      >
+      
             <v-card-title>{{ project.title }}</v-card-title>
           </v-img>
 
@@ -34,22 +35,6 @@
         </v-card>
         </v-col>
       </v-row>
-
-      <h2 class="text-center mb-6">Web Apps</h2>
-      <v-row>
-        <v-col cols="12" md="4" v-for="project in webProjects" :key="project.title">
-          <v-card class="mb-6" elevation="2">
-            <v-img :src="require(`@/assets/${project.image}`)" height="200px" :alt="project.alt" />
-            <v-card-title class="text-h6 text-center">{{ project.title }}</v-card-title>
-            <v-card-subtitle class="text-center">{{ project.description }}</v-card-subtitle>
-            <v-card-text class="text-center">Technologies: {{ project.technologies }}</v-card-text>
-            <v-card-actions class="justify-center">
-              <v-btn :href="project.githubLink" target="_blank" color="primary" text>Project on GitHub</v-btn>
-              <v-btn v-if="project.previewLink" :href="project.previewLink" target="_blank" color="secondary" text>Preview</v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-col>
-      </v-row>
     </v-container>
   </template>
 
@@ -60,18 +45,18 @@
       return {
         mobileProjects: [
           {
-            title: "House Rental",
-            description: "Project developed independently",
-            technologies: "Flutter",
-            image: "MusicConnect.png",
-            alt: "Music Image",
+            title: "PrefeituraETL",
+            description: "Project developed in partnership with the local government to optimize and facilitate governmental migration operations.",
+            technologies: "Python | Flask | PostgreSQL",
+            image: "PrefeituraETL.svg",
+            alt: "PrefeituraETL",
             githubLink: "https://github.com/jovitif/MusiConnect",
             previewLink: "https://musicconnect.netlify.app/",
           },
           {
-            title: "Whatsthis",
-            description: "Project developed for the mobile development course",
-            technologies: "Flutter",
+            title: "Loucos por Flaskback",
+            description: "Pagina de imersão cultural para levar pessoas para um bate papo para ter acesso ao local da cultura focado em musica",
+            technologies: "React e firebase",
             image: "logo.png",
             alt: "Quizzefy Image",
             githubLink: "https://github.com/jovitif/Quizzefy-Mobile-App",
@@ -79,78 +64,24 @@
           },
           {
             title: "Epanouir",
-            description: "Project developed independently",
-            technologies: "Flutter",
-            image: "MusicConnect.png",
+            description: "simular ambiente iterativo de hills de beyond good and evil para ajudar pessoas com ansiedade",
+            technologies: "React Native",
+            image: "Epanouir.svg",
             alt: "Music Image",
             githubLink: "https://github.com/jovitif/MusiConnect",
             previewLink: "https://musicconnect.netlify.app/",
           },
           {
-            title: "Musiconnect App",
-            description: "Project developed independently",
-            technologies: "Flutter",
-            image: "MusicConnect.png",
+            title: "Whatsthis",
+            description: "App de aprendizagem de ingles para ajudar desenvolvedores a conseguir vaga na",
+            technologies: "React Native",
+            image: "Whatsthis.svg",
             alt: "Music Image",
             githubLink: "https://github.com/jovitif/MusiConnect",
             previewLink: "https://musicconnect.netlify.app/",
-          },
-          {
-            title: "Timeless: A Journey Through Brazilian History.",
-            description: "Project developed independently",
-            technologies: "Flutter",
-            image: "time.png",
-            alt: "Game",
-            githubLink: "https://github.com/jovitif/MusiConnect",
-            previewLink: "https://musicconnect.netlify.app/",
-          },
+          }
         ],
-        webProjects: [
-          {
-            title: "Employee Management System",
-            description: "This system was developed as part of the selection process for an internship position at the City Hall of Mossoró.",
-            technologies: "Ruby on Rails",
-            image: "mossoro.png",
-            alt: "Mossoró",
-            githubLink: "https://github.com/jovitif/Sistema-de-Gerenciamento-de-Funcionarios",
-            previewLink: "https://youtu.be/GGWKiih91Oo",
-          },
-          {
-            title: "Higia Way",
-            description: "Gamified Chatbot for monitoring and Learning about pregnancy",
-            technologies: "React.js and Node.js",
-            image: "higia.png",
-            alt: "Higia Way image",
-          },
-          {
-            title: "Lost Pet Reunion Solution",
-            description: "Project developed independently",
-            technologies: "Spring & Vue",
-            image: "MusicConnect.png",
-            alt: "Music Image",
-            githubLink: "https://github.com/jovitif/MusiConnect",
-            previewLink: "https://musicconnect.netlify.app/",
-          },
-          {
-            title: "DietFitAI",
-            description: "Project developed independently",
-            technologies: "Node.js, React.js, PostgreSQL",
-            image: "saude.png",
-            alt: "Music Image",
-            githubLink: "https://github.com/jovitif/MusiConnect",
-            previewLink: "https://musicconnect.netlify.app/",
-          },
-
-          {
-            title: "Guitar Hero | Sintonized | Aprender Musica",
-            description: "Project developed independently",
-            technologies: "Flutter",
-            image: "MusicConnect.png",
-            alt: "Music Image",
-            githubLink: "https://github.com/jovitif/MusiConnect",
-            previewLink: "https://musicconnect.netlify.app/",
-          },
-        ],
+      
       };
     },
   };

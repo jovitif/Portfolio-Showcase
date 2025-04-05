@@ -18,17 +18,14 @@
 
         <v-row no-gutters>
           <v-col cols="12" class="text-center">
-            <h2 class="central-header">Experience</h2>
             <ExperienceSection />
           </v-col>
         </v-row>
-<!--
 <v-row no-gutters>
           <v-col cols="12">
             <ProjectsSection />
           </v-col>
         </v-row>
--->
 
 
         <v-row no-gutters>
@@ -52,7 +49,7 @@
   import AboutSection from '../components/AboutSection.vue';
   import SKillsSection from '../components/SkillsSection.vue';
   import ExperienceSection from '@/components/ExperienceSection.vue';
-  //import ProjectsSection from '../components/ProjectsSection.vue';
+  import ProjectsSection from '../components/ProjectsSection.vue';
   import CertificatesSection from '@/components/CertificatesSection.vue';
   import ContactForm from '@/components/ContactForm.vue';
 
@@ -63,7 +60,7 @@
       AboutSection,
       SKillsSection,
       ExperienceSection,
-    //  ProjectsSection,
+    ProjectsSection,
       CertificatesSection,
       ContactForm,
     },
