@@ -4,12 +4,12 @@
       <v-row>
         <v-col cols="12" md="4" v-for="project in mobileProjects" :key="project.title">
           <v-card
-          class="mx-auto"
+          class="mx-auto zoom-on-hover"
           max-width="400"
         >
         <v-img
-        class="align-end text-white"
-        height="200"
+        class="align-end text-white ml-7"
+        height="350"
         :src="require(`@/assets/${project.image}`)"
         contain
       >
@@ -48,37 +48,37 @@
             title: "PrefeituraETL",
             description: "Project developed in partnership with the local government to optimize and facilitate governmental migration operations.",
             technologies: "Python | Flask | PostgreSQL",
-            image: "PrefeituraETL.svg",
+            image: "Prefeitura.svg",
             alt: "PrefeituraETL",
-            githubLink: "https://github.com/jovitif/MusiConnect",
-            previewLink: "https://musicconnect.netlify.app/",
+            githubLink: "",
+            previewLink: "",
           },
           {
             title: "Loucos por Flaskback",
-            description: "Pagina de imersão cultural para levar pessoas para um bate papo para ter acesso ao local da cultura focado em musica",
-            technologies: "React e firebase",
-            image: "logo.png",
+            description: "A cultural immersion page that invites users to join a conversation and gain access to a music-focused cultural space.",
+            technologies: "React.js | Firebase",
+            image: "Loucos.svg",
             alt: "Quizzefy Image",
-            githubLink: "https://github.com/jovitif/Quizzefy-Mobile-App",
-            downloadLink: "/src/apks/quizzefy/app-debug.apk",
+            githubLink: "",
+            downloadLink: "",
           },
           {
             title: "Epanouir",
-            description: "simular ambiente iterativo de hills de beyond good and evil para ajudar pessoas com ansiedade",
-            technologies: "React Native",
+            description: "Create an interactive environment that helps individuals with anxiety disorders relax, unwind, and become the best version of themselves.",
+            technologies: "React Native | Node.js",
             image: "Epanouir.svg",
             alt: "Music Image",
-            githubLink: "https://github.com/jovitif/MusiConnect",
-            previewLink: "https://musicconnect.netlify.app/",
+            githubLink: "",
+            previewLink: "",
           },
           {
             title: "Whatsthis",
-            description: "App de aprendizagem de ingles para ajudar desenvolvedores a conseguir vaga na",
-            technologies: "React Native",
+            description: "Empowering software developers to learn English and unlock opportunities in the global tech industry.",
+            technologies: "React Native | Node.js",
             image: "Whatsthis.svg",
             alt: "Music Image",
-            githubLink: "https://github.com/jovitif/MusiConnect",
-            previewLink: "https://musicconnect.netlify.app/",
+            githubLink: "",
+            previewLink: "",
           }
         ],
       
@@ -99,4 +99,13 @@
   .mb-6 {
     margin-bottom: 24px;
   }
+
+  .zoom-on-hover {
+  transition: transform 0.3s ease;
+}
+
+.zoom-on-hover:hover {
+  transform: scale(1.05);
+  z-index: 2;
+}
   </style>
