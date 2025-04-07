@@ -26,12 +26,15 @@
 
 
           </v-card-text>
-
-          <v-card-actions>
+<!-- Isso é um comentário em HTML e aparecerá no DOM 
+           <v-card-actions>
             <v-btn color="orange" text="Share"></v-btn>
 
             <v-btn color="orange" text="Explore"></v-btn>
           </v-card-actions>
+-->
+
+
         </v-card>
         </v-col>
       </v-row>
