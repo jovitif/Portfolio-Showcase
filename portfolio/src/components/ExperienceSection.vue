@@ -155,24 +155,7 @@
 
           ],
           },
-          {
-            title: "In-Person Training on Cloud Services, AI, and Swift",
-            company: "Hackatruck",
-            period: "Completed",
-            description:
-              "Hands-on Practice with Cloud Services Using Swift, with Emphasis on Cognitive Services",
-              details: "I learned several important technologies during one month of training, such as mobile app development using Swift and working with IBM Cloud services. This course was very valuable to me as it provided a solid introduction to artificial intelligence and cloud computing.",
-
-              icon: "mdi-school",
-            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAWNtNcSWBpooHj2vf_XvDXGMI5HQemG3FDA&s",
-            link: "https://codex.mossoro.rn.gov.br/",
-          images: [
-            "https://prefeiturademossoro.com.br/uploads/thumbnails/zln4ush8htfy3zn8b6mhl66cs6x5mr.jpeg",
-            "https://prefeiturademossoro.com.br/uploads/thumbnails/0o0dt90okftiyysszqdptnprlugmxu.jpeg",
-            "https://prefeiturademossoro.com.br/uploads/thumbnails/0o0dt90okftiyysszqdptnprlugmxu.jpeg",
-
-          ],
-          },
+       
         ],
         timelineColors: ["red-lighten-2", "purple-lighten-2", "green-lighten-1"],
       };
