@@ -50,7 +50,6 @@ export default {
         { name: "Portugueses", percentage: 100 },
         { name: "English", percentage: 80 },
         { name: "Spanish", percentage: 60 },
-        { name: "Franch", percentage: 50 },
       ],
     };
   },

@@ -92,15 +92,7 @@
           title: "Full Stack Developer Intern",
           company: "Prefeitura de Mossoró",
           period: "Ongoing",
-          description: "Trabalhando como full stack developer...",
-          details: "Detalhamento completo do projeto...",
-          link: "https://codex.mossoro.rn.gov.br/",
-          images: [
-            "https://prefeiturademossoro.com.br/uploads/thumbnails/zln4ush8htfy3zn8b6mhl66cs6x5mr.jpeg",
-            "https://prefeiturademossoro.com.br/uploads/thumbnails/0o0dt90okftiyysszqdptnprlugmxu.jpeg",
-            "https://prefeiturademossoro.com.br/uploads/thumbnails/0o0dt90okftiyysszqdptnprlugmxu.jpeg",
-
-          ],
+          description: "Interned as a full-stack developer at the City Hall of Mossoró, working on bug fixes and improvements for platforms such as Codex and the HR system. Additionally, I am developing a custom ETL tool to streamline the city's data migration processes.",
           icon: "mdi-city",
           image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLU0iIyvG0HAoQBbX2Imiu033LNEL67SoZag&s",
         },
@@ -108,13 +100,7 @@
           title: "Research Scholarship",
           company: "Higia Way Project",
           period: "Ongoing",
-          description: "Contribuí no desenvolvimento de um chatbot...",
-          details: "Mais informações sobre o impacto do projeto...",
-          link: "https://example.com/projeto2",
-          images: [
-            "https://via.placeholder.com/300x200",
-            "https://via.placeholder.com/300x200",
-          ],
+          description: "Contributed to the development of an AI assistant designed to support pregnant women in their daily routines. Additionally, assisted in debugging and maintaining the clinic’s legacy system.",
           icon: "mdi-robot",
           image: "https://t4.ftcdn.net/jpg/06/01/66/45/360_F_601664574_l72Nqtw5PcIICG1bF8NtzWncWLeh1ida.jpg",
         },
@@ -123,17 +109,16 @@
   company: "Language Learning AI App",
   period: "Completed",
   description:
-    "Contributed to the development of an AI-powered language learning app, focusing on features that enhance user engagement and natural language processing. Impacto: desnvolvimento de um microsaas de aprendizagem de idiomas",
+    "Contributed to the development of an AI-powered micro-SaaS language learning app, focusing on user engagement features and advanced natural language processing. Impact: helped build a scalable solution for immersive and personalized language acquisition.",
   icon: "mdi-earth",
   image: "https://img.freepik.com/free-vector/rocket-spaceship-cartoon-vector-icon-illustration-science-technology-icon-concept-isolated-flat_138676-9714.jpg?semt=ais_hybrid",
-}
-,
+},
           {
             title: "Intern",
             company: "Compass UOL",
             period: "Internship Period",
             description:
-              "Learned about machine learning techniques using AWS and obtained the AWS Cloud Practitioner certification. Impacto: desenvolvimento de uma aplicação de rastreio de animais perdidos",
+              "Acquired hands-on experience with machine learning techniques using AWS and earned the AWS Cloud Practitioner certification. Impact: contributed to the development of an application for tracking lost animals.",
             icon: "mdi-cloud",
             image: "https://s3.sa-east-1.amazonaws.com/remotar-assets-prod/company-profile-pictures/cl7godhi300lz04wgcki4gfxn.jpg",
           },
@@ -142,18 +127,9 @@
             company: "University Courses",
             period: "Completed",
             description:
-              "Taught basic programming and algorithms to students from other higher education courses. Impacto desenvolvido: aprendizagem de mais de 60 alunos sobre algoritmo",
-              details: "Taught basic programming and algorithms to students from other higher education courses. Impacto desenvolvido: aprendizagem de mais de 60 alunos sobre algoritmo",
-
+              "Taught basic programming and algorithms to students from various higher education programs. Impact: empowered over 60 students with foundational knowledge in algorithms and computational thinking.",
               icon: "mdi-school",
             image: "https://repositorio.ufersa.edu.br/assets/images/brasao2.png",
-            link: "https://codex.mossoro.rn.gov.br/",
-          images: [
-            "https://prefeiturademossoro.com.br/uploads/thumbnails/zln4ush8htfy3zn8b6mhl66cs6x5mr.jpeg",
-            "https://prefeiturademossoro.com.br/uploads/thumbnails/0o0dt90okftiyysszqdptnprlugmxu.jpeg",
-            "https://prefeiturademossoro.com.br/uploads/thumbnails/0o0dt90okftiyysszqdptnprlugmxu.jpeg",
-
-          ],
           },
        
         ],
