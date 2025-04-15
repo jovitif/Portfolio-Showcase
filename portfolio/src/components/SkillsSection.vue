@@ -39,12 +39,13 @@ export default {
     return {
       skills: [
         { name: "Python", percentage: 90 },
-        { name: "Ruby on Rails", percentage: 70 },
-        { name: "Node.js", percentage: 80 },
-        { name: "React.js", percentage: 60 },
-        { name: "React Native", percentage: 60 },
-        { name: "AWS", percentage: 80 },
         { name: "PostgreSQL", percentage: 90 },
+        { name: "Node.js", percentage: 80 },
+        { name: "AWS", percentage: 80 },
+        { name: "Ruby on Rails", percentage: 70 },
+        { name: "React.js", percentage: 60 },
+        { name: "N8N", percentage: 60 },
+        { name: "React Native", percentage: 60 },
       ],
       languages:[
         { name: "Portugueses", percentage: 100 },
