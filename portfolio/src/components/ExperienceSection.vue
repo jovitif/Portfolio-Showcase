@@ -1,62 +1,57 @@
 <template>
-  <v-container id="Experience">
+  <v-container id="Experience" class="py-10">
     <v-row justify="center">
-      <v-col cols="12" md="8">
-        <v-card class="mb-6">
-          <v-card-title>
-            <h2>Experience</h2>
-          </v-card-title>
-          <v-card-text>
-            <v-timeline align-top>
-              <v-timeline-item
-                v-for="(experience, index) in experiences"
-                :key="index"
-                :dot-color="timelineColors[index % timelineColors.length]"
-                :icon="experience.icon"
-                fill-dot
+      <v-col cols="12" md="10" lg="8">
+        <h2 class="text-center mb-8 text-primary font-weight-bold">Experience</h2>
+
+        <v-timeline align="start" dense>
+          <v-timeline-item
+            v-for="(experience, index) in experiences"
+            :key="index"
+            :dot-color="timelineColors[index % timelineColors.length]"
+            :icon="experience.icon"
+            fill-dot
+          >
+            <template #opposite>
+              <span class="font-weight-medium">{{ experience.period }}</span>
+            </template>
+
+            <v-card
+              class="pa-4 mb-4 experience-card"
+              outlined
+              @click="openModal(experience)"
+            >
+              <v-row
+                align="center"
+                :class="{
+                  'flex-column': $vuetify.display.smAndDown,
+                  'flex-row': !$vuetify.display.smAndDown
+                }"
               >
-                <template #opposite>
-                  <strong>{{ experience.period }}</strong>
-                </template>
-                <v-card 
-                  outlined 
-                  class="pa-4 experience-card" 
-                  @click="openModal(experience)"
-                >
-                  <v-row>
-                    <v-col cols="3">
-                      <v-avatar size="64">
-                        <img
-                          :src="experience.image"
-                          alt="Experience image"
-                          style="object-fit: contain; width: 100%; height: 100%;"
-                        />
-                      </v-avatar>
-                    </v-col>
-                    <v-col cols="9">
-                      <v-card-title>
-                        <span>{{ experience.title }}</span>
-                      </v-card-title>
-                      <v-card-subtitle>
-                        <strong>{{ experience.company }}</strong>
-                      </v-card-subtitle>
-                      <v-card-text>
-                        <p>{{ experience.description }}</p>
-                      </v-card-text>
-                    </v-col>
-                  </v-row>
-                </v-card>
-              </v-timeline-item>
-            </v-timeline>
-          </v-card-text>
-        </v-card>
+                <v-col cols="12" sm="3" class="d-flex justify-center">
+                  <v-avatar size="64">
+                    <v-img :src="experience.image" cover></v-img>
+                  </v-avatar>
+                </v-col>
+
+                <v-col cols="12" sm="9" class="text-sm-left text-center">
+                  <h3 class="mb-1">{{ experience.title }}</h3>
+                  <p class="font-italic mb-1 text-medium-emphasis">{{ experience.company }}</p>
+                  <p class="text-body-2">{{ experience.description }}</p>
+                </v-col>
+              </v-row>
+            </v-card>
+          </v-timeline-item>
+        </v-timeline>
       </v-col>
     </v-row>
 
     <v-dialog v-model="modalOpen" max-width="600">
       <v-card>
         <v-card-title class="headline">{{ selectedExperience.title }}</v-card-title>
-        <v-card-subtitle>{{ selectedExperience.company }} - {{ selectedExperience.period }}</v-card-subtitle>
+        <v-card-subtitle>
+          {{ selectedExperience.company }} - {{ selectedExperience.period }}
+        </v-card-subtitle>
         <v-card-text>
           <p>{{ selectedExperience.details }}</p>
           <v-img
@@ -66,19 +61,26 @@
             class="mb-2"
             height="200"
             contain
-          ></v-img>
-          <v-btn v-if="selectedExperience.link" :href="selectedExperience.link" target="_blank" color="primary">
+          />
+          <v-btn
+            v-if="selectedExperience.link"
+            :href="selectedExperience.link"
+            target="_blank"
+            color="primary"
+            class="mt-4"
+          >
             Acessar Aplicação
           </v-btn>
         </v-card-text>
         <v-card-actions>
+          <v-spacer />
           <v-btn color="red" text @click="modalOpen = false">Fechar</v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>
-
   </v-container>
 </template>
+
 
   <script>
   export default {
@@ -146,29 +148,30 @@
   </script>
 
 <style scoped>
-.v-card-title h2 {
-  color: #0a66c2;
-  text-align: center;
-  margin: 0;
-}
-
-.v-card {
-  background-color: #f5f5f5;
-  border-radius: 10px;
-}
-
-.v-timeline-item {
-  margin-bottom: 20px;
-}
-
-.v-card.experience-card {
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+.experience-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  border-radius: 12px;
+  background-color: #fafafa;
 }
 
-.v-card.experience-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+.experience-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   background-color: #e3f2fd;
+}
+
+@media (max-width: 600px) {
+  .v-card-title h2 {
+    font-size: 22px;
+  }
+
+  .experience-card h3 {
+    font-size: 18px;
+  }
+
+  .experience-card p {
+    font-size: 14px;
+  }
 }
 </style>
