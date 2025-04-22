@@ -3,31 +3,54 @@
     <!-- Profile Section -->
     <v-row class="sectionsobre" align="center" justify="space-around">
       <v-col cols="12" md="4" class="d-flex justify-center">
-        <v-card class="card pa-4" elevation="3" max-width="100%" style="width: 100%; max-width: 350px;">
-          <v-avatar size="120" class="d-flex justify-center align-center ma-auto">
-            <v-img
-              :src="require('../assets/profile.png')"
-              alt="Profile Picture"
-              class="profile-img"
-            />
-          </v-avatar>
-
-          <v-card-title class="text-h6 text-center font-weight-bold mt-4">
-            João Vitor Fernandes de Sales
-          </v-card-title>
-
-          <v-card-subtitle class="text-center grey--text text--darken-2 d-flex justify-center align-center">
-            <v-icon class="mr-1">mdi-robot</v-icon> Software Engineer <v-icon class="ml-1">mdi-robot</v-icon>
-          </v-card-subtitle>
-
-          <v-card-text class="text-center">
-            Bachelor's Degree in Computer Science
-          </v-card-text>
-
-          <v-card-text class="text-center grey--text">
-            Mossoró, Rio Grande do Norte, Brazil
-          </v-card-text>
-        </v-card>
+        <v-card
+        class="card pa-4"
+        elevation="3"
+        max-width="100%"
+        style="width: 100%; max-width: 350px; background-color: #2196f3; color: white;"
+      >
+        <v-avatar size="120" class="d-flex justify-center align-center ma-auto">
+          <v-img
+            :src="require('../assets/profile.png')"
+            alt="Profile Picture"
+            class="profile-img"
+          />
+        </v-avatar>
+      
+        <v-card-title class="text-h6 text-center font-weight-bold mt-4">
+          João Vitor Fernandes de Sales
+        </v-card-title>
+      
+        <v-card-subtitle class="text-center d-flex justify-center align-center" style="color: white;">
+          <v-icon class="mr-1" color="white">mdi-robot</v-icon>
+          Software Engineer
+          <v-icon class="ml-1" color="white">mdi-robot</v-icon>
+        </v-card-subtitle>
+      
+        <v-card-text class="text-center">
+          Bachelor's Degree in Computer Science
+        </v-card-text>
+      
+        <v-card-text class="text-center" style="color: white;">
+          Mossoró, Rio Grande do Norte, Brazil
+        </v-card-text>
+      
+        <!-- Botão de Download do Currículo -->
+        <v-card-actions class="d-flex justify-center mt-4">
+          <a
+            href="/Resume_Joao_Sales.pdf"
+            download="Resume_Joao_Sales.pdf"
+            target="_blank"
+          >
+            <v-btn color="white" text>
+              <v-icon left>mdi-download</v-icon>
+              Download CV
+            </v-btn>
+          </a>
+        </v-card-actions>
+      </v-card>
+      
+      
       </v-col>
 
       <!-- About Section -->

@@ -1,9 +1,9 @@
 <template>
-  <v-app-bar app color="blue" flat>
+  <v-app-bar app color="blue" flat dark>
     <v-container>
       <v-row align="center" justify="space-between">
         <v-col cols="auto">
-            <h1 class="mb-0" style="font-size: 23px;">João Sales</h1>
+          <h1 class="mb-0" style="font-size: 23px;">João Sales</h1>
         </v-col>
 
         <v-col cols="auto" class="d-md-none">
@@ -18,6 +18,13 @@
               {{ item.label }}
             </v-btn>
           </v-toolbar-items>
+        </v-col>
+
+        <!-- Dark Mode Toggle -->
+        <v-col cols="auto">
+          <v-btn icon @click="toggleDarkMode" class="text--white">
+            <v-icon>{{ isDark ? 'mdi-white-balance-sunny' : 'mdi-weather-night' }}</v-icon>
+          </v-btn>
         </v-col>
       </v-row>
 
@@ -51,12 +58,20 @@ export default {
         { label: 'Projects', link: '#Projects' },
         { label: 'Certifications', link: '#Certifications' },
         { label: 'Contact', link: '#Contact' }
-      ]
+      ],
     };
+  },
+  computed: {
+    isDark() {
+      return this.$vuetify.theme.dark;
+    }
   },
   methods: {
     toggleMenu() {
       this.isMenuOpen = !this.isMenuOpen;
+    },
+    toggleDarkMode() {
+      this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
     }
   }
 };
