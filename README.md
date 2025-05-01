@@ -1,6 +1,6 @@
-# Portfolio
+# Personal Portfolio
 
-Welcome to my portfolio website! This project was created using **Vuetify**, a Vue.js-based Material Design component framework. It serves as a showcase of my skills and experiences as a **Machine Learning Engineer**.
+Welcome to the frontend of my personal portfolio! This website was built with React, Vite, and Tailwind CSS, and showcases my background, skills, and projects as a Software Developer and Machine Learning enthusiast.
 
 ## Live Demo
 
@@ -8,7 +8,7 @@ You can visit the portfolio here: [Portfolio](https://jovitportfolio.netlify.app
 
 ## Purpose
 
-This portfolio was designed to highlight my professional expertise and achievements in the field of machine learning. It provides potential collaborators, recruiters, and employers a detailed view of my background and capabilities.
+This project serves as my professional portfolio, designed to present my skills, projects, and experience to potential employers, collaborators, and clients in a clear and visually engaging way.
 
 ## Features
 
@@ -32,10 +32,6 @@ The portfolio is organized into the following sections:
 ### 6. **Contact**
    - Information on how to get in touch with me for professional opportunities or collaboration.
 
-## Technologies Used
-
-- **Vuetify**: For building a responsive and visually appealing user interface.
-- **Netlify**: For hosting and deployment.
 
 ## Feedback and Support
 
