@@ -96,11 +96,24 @@ const translations: Translations = {
     pt: "Em andamento",
     es: "En curso"
   },
-  prefeituraDesc: {
-    en: "Interned as a full-stack developer at the City Hall of Mossoró, working on bug fixes and improvements for platforms such as Codex and the HR system. Additionally, developed a custom ETL tool to streamline the city's data migration processes.",
-    pt: "Estágio como desenvolvedor full-stack na Prefeitura de Mossoró, trabalhando em correções de bugs e melhorias para plataformas como Codex e o sistema de RH. Além disso, desenvolveu uma ferramenta ETL personalizada para otimizar os processos de migração de dados da cidade.",
-    es: "Prácticas como desarrollador full-stack en el Ayuntamiento de Mossoró, trabajando en corrección de errores y mejoras para plataformas como Codex y el sistema de RRHH. Además, desarrolló una herramienta ETL personalizada para optimizar los procesos de migración de datos de la ciudad."
-  },
+prefeituraDesc: {
+  en: `Interned as a full-stack developer at the City Hall of Mossoró, contributing to various projects:\n
+- Developed and maintained Codex, an internal training platform and project showcase built with Ruby on Rails and React.js.\n
+- Created a Python script to assist data migration from an old SQL Server system to PostgreSQL for the HR system.\n
+- Helped develop the inclusion feature for Mossoró Cidade Junina, the city’s most popular cultural event, using Ruby on Rails.\n
+- Built a custom ETL tool with Django and React.js to streamline government data migration processes.`,
+  pt: `Estágio como desenvolvedor full-stack na Prefeitura de Mossoró, atuando em diversos projetos:\n
+- Desenvolvimento e manutenção do Codex, plataforma interna de treinamento e vitrine de projetos, utilizando Ruby on Rails e React.js.\n
+- Criação de script em Python para auxiliar na migração de dados do sistema antigo em SQL Server para PostgreSQL, no sistema de RH.\n
+- Colaboração no desenvolvimento da funcionalidade de inclusão para o Mossoró Cidade Junina, evento cultural mais popular da cidade, usando Ruby on Rails.\n
+- Desenvolvimento de ferramenta ETL personalizada com Django e React.js para otimizar processos de migração de dados governamentais.`,
+  es: `Prácticas como desarrollador full-stack en el Ayuntamiento de Mossoró, participando en varios proyectos:\n
+- Desarrollo y mantenimiento de Codex, plataforma interna de capacitación y vitrina de proyectos, usando Ruby on Rails y React.js.\n
+- Creación de un script en Python para ayudar en la migración de datos del sistema antiguo en SQL Server a PostgreSQL, para el sistema de RRHH.\n
+- Colaboración en el desarrollo de la función de inclusión para Mossoró Cidade Junina, el evento cultural más popular de la ciudad, con Ruby on Rails.\n
+- Desarrollo de una herramienta ETL personalizada con Django y React.js para optimizar procesos de migración de datos gubernamentales.`,
+},
+
   researchScholarship: {
     en: "Research Scholarship",
     pt: "Bolsista de Pesquisa",
@@ -111,11 +124,26 @@ const translations: Translations = {
     pt: "Projeto Higia Way",
     es: "Proyecto Higia Way"
   },
-  higiaWayDesc: {
-    en: "Contributed to the development of an AI assistant designed to support pregnant women in their daily routines. Also assisted in debugging and maintaining the clinic's legacy system.",
-    pt: "Contribuiu para o desenvolvimento de um assistente de IA projetado para apoiar mulheres grávidas em suas rotinas diárias. Também auxiliou na depuração e manutenção do sistema legado da clínica.",
-    es: "Contribuyó al desarrollo de un asistente de IA diseñado para apoyar a mujeres embarazadas en sus rutinas diarias. También ayudó en la depuración y mantenimiento del sistema heredado de la clínica."
-  },
+ higiaWayDesc: {
+  en: `Contributed to the development of an AI assistant designed to support pregnant women in their daily routines. Key contributions included:\n
+- Assisted in debugging and maintaining the clinic's legacy system built with Node.js and React.js.\n
+- Helped recover and repopulate lost data following a VM migration.\n
+- Gathered requirements and researched technologies for developing an intelligent agent to assist pregnant women.\n
+- Supported the development of a chatbot using n8n, integrating it with the clinic's frontend and backend.`,
+
+  pt: `Contribuiu para o desenvolvimento de um assistente de IA projetado para apoiar mulheres grávidas em suas rotinas diárias. Principais contribuições:\n
+- Auxiliou na correção de bugs e manutenção do sistema legado da clínica, desenvolvido com Node.js e React.js.\n
+- Ajudou no processo de recuperação e povoamento dos dados perdidos após uma migração de VM.\n
+- Realizou o levantamento de requisitos e pesquisa de tecnologias para o desenvolvimento de um agente inteligente para auxiliar gestantes.\n
+- Colaborou no desenvolvimento do chatbot utilizando n8n, integrando-o ao frontend e backend da clínica.`,
+
+  es: `Contribuyó al desarrollo de un asistente de IA diseñado para apoyar a mujeres embarazadas en sus rutinas diarias. Contribuciones clave:\n
+- Ayudó en la corrección de errores y mantenimiento del sistema heredado de la clínica, desarrollado con Node.js y React.js.\n
+- Colaboró en la recuperación y repoblación de datos perdidos tras una migración de VM.\n
+- Realizó levantamiento de requisitos e investigación de tecnologías para el desarrollo de un agente inteligente para asistir a mujeres embarazadas.\n
+- Participó en el desarrollo del chatbot usando n8n, integrándolo con el frontend y backend de la clínica.`
+},
+
   volunteerDeveloper: {
     en: "Volunteer Developer",
     pt: "Desenvolvedor Voluntário",
